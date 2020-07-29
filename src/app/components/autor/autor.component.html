@@ -1,0 +1,6 @@
+<div *ngIf="autores != null; else vacio">
+    <ul *ngFor="let item of autores">
+        <li>{{item}}</li>
+    </ul>
+</div>
+<ng-template #vacio>Aún no hay autores</ng-template>
